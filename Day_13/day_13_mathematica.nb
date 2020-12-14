@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7395,        210]
-NotebookOptionsPosition[      6297,        183]
-NotebookOutlinePosition[      6689,        199]
-CellTagsIndexPosition[      6646,        196]
+NotebookDataLength[      9627,        245]
+NotebookOptionsPosition[      8529,        218]
+NotebookOutlinePosition[      8921,        234]
+CellTagsIndexPosition[      8878,        231]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -108,7 +108,7 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Reduce", "[", 
+ RowBox[{"Solve", "[", 
   RowBox[{
    RowBox[{
     RowBox[{
@@ -125,55 +125,90 @@ Cell[BoxData[
   3.816865365879367*^9, 3.816865366093585*^9}, {3.81686547274439*^9, 
   3.816865481975445*^9}, {3.81686551543302*^9, 3.816865554145822*^9}, {
   3.816865586516926*^9, 3.816865596767065*^9}, {3.816865730686496*^9, 
-  3.816865733027116*^9}},
- CellLabel->"In[34]:=",ExpressionUUID->"980dbdcb-4b50-4e7b-9349-a0781ad0817f"],
+  3.816865733027116*^9}, {3.816868822024905*^9, 3.816868822528878*^9}},
+ CellLabel->"In[35]:=",ExpressionUUID->"980dbdcb-4b50-4e7b-9349-a0781ad0817f"],
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{
-   TemplateBox[{"1"},
-    "C"], "\[Element]", 
-   TemplateBox[{},
-    "Integers"]}], "&&", 
-  RowBox[{
-   RowBox[{"a", "[", "1", "]"}], "\[Equal]", 
-   RowBox[{"152683", "+", 
-    RowBox[{"451763", " ", 
-     TemplateBox[{"1"},
-      "C"]}]}]}], "&&", 
-  RowBox[{
-   RowBox[{"a", "[", "2", "]"}], "\[Equal]", 
-   RowBox[{"82214", "+", 
-    RowBox[{"243257", " ", 
-     TemplateBox[{"1"},
-      "C"]}]}]}], "&&", 
-  RowBox[{
-   RowBox[{"a", "[", "3", "]"}], "\[Equal]", 
-   RowBox[{"18115", "+", 
-    RowBox[{"53599", " ", 
-     TemplateBox[{"1"},
-      "C"]}]}]}], "&&", 
-  RowBox[{
-   RowBox[{"a", "[", "4", "]"}], "\[Equal]", 
-   RowBox[{"34477", "+", 
-    RowBox[{"102011", " ", 
-     TemplateBox[{"1"},
-      "C"]}]}]}], "&&", 
-  RowBox[{
-   RowBox[{"a", "[", "5", "]"}], "\[Equal]", 
-   RowBox[{"56252", "+", 
-    RowBox[{"166439", " ", 
-     TemplateBox[{"1"},
-      "C"]}]}]}], "&&", 
-  RowBox[{"n", "\[Equal]", 
-   RowBox[{"1068781", "+", 
-    RowBox[{"3162341", " ", 
-     TemplateBox[{"1"},
-      "C"]}]}]}]}]], "Output",
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"n", "\[Rule]", 
+    TemplateBox[{
+      RowBox[{"1068781", "+", 
+        RowBox[{"3162341", " ", 
+          TemplateBox[{"1"}, "C"]}]}], 
+      InterpretationBox[
+       DynamicModuleBox[{Typeset`open = False}, 
+        TemplateBox[{"Expression", 
+          StyleBox[
+           TagBox[
+            TooltipBox["\"condition\"", 
+             TagBox[
+              RowBox[{
+                RowBox[{
+                  TemplateBox[{"1"}, "C"], "\[Element]", 
+                  TemplateBox[{}, "Integers"]}], "&&", 
+                RowBox[{
+                  RowBox[{"a", "[", "1", "]"}], "\[Equal]", 
+                  RowBox[{"152683", "+", 
+                    RowBox[{"451763", " ", 
+                    TemplateBox[{"1"}, "C"]}]}]}], "&&", 
+                RowBox[{
+                  RowBox[{"a", "[", "2", "]"}], "\[Equal]", 
+                  RowBox[{"82214", "+", 
+                    RowBox[{"243257", " ", 
+                    TemplateBox[{"1"}, "C"]}]}]}], "&&", 
+                RowBox[{
+                  RowBox[{"a", "[", "3", "]"}], "\[Equal]", 
+                  RowBox[{"18115", "+", 
+                    RowBox[{"53599", " ", 
+                    TemplateBox[{"1"}, "C"]}]}]}], "&&", 
+                RowBox[{
+                  RowBox[{"a", "[", "4", "]"}], "\[Equal]", 
+                  RowBox[{"34477", "+", 
+                    RowBox[{"102011", " ", 
+                    TemplateBox[{"1"}, "C"]}]}]}], "&&", 
+                RowBox[{
+                  RowBox[{"a", "[", "5", "]"}], "\[Equal]", 
+                  RowBox[{"56252", "+", 
+                    RowBox[{"166439", " ", 
+                    TemplateBox[{"1"}, "C"]}]}]}]}], Short[#, 7]& ]], 
+            Annotation[#, 
+             Short[
+              And[
+               Element[
+                C[1], Integers], $CellContext`a[1] == 
+               152683 + 451763 C[1], $CellContext`a[2] == 
+               82214 + 243257 C[1], $CellContext`a[3] == 
+               18115 + 53599 C[1], $CellContext`a[4] == 
+               34477 + 102011 C[1], $CellContext`a[5] == 56252 + 166439 C[1]],
+               7], "Tooltip"]& ], "IconizedCustomName", StripOnInput -> 
+           False], 
+          GridBox[{{
+             RowBox[{
+               TagBox["\"Head: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+               TagBox["And", "IconizedItem"]}]}, {
+             RowBox[{
+               TagBox["\"Byte count: \"", "IconizedLabel"], 
+               "\[InvisibleSpace]", 
+               TagBox["1848", "IconizedItem"]}]}}, 
+           GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+           "Column", 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+          Dynamic[Typeset`open]}, "IconizedObject"]], 
+       And[
+        Element[
+         C[1], Integers], $CellContext`a[1] == 
+        152683 + 451763 C[1], $CellContext`a[2] == 
+        82214 + 243257 C[1], $CellContext`a[3] == 
+        18115 + 53599 C[1], $CellContext`a[4] == 
+        34477 + 102011 C[1], $CellContext`a[5] == 56252 + 166439 C[1]], 
+       SelectWithContents -> True, Selectable -> False]},
+     "ConditionalExpression"]}], "}"}], "}"}]], "Output",
  CellChangeTimes->{
   3.816865554397443*^9, {3.8168655942601643`*^9, 3.8168656038556223`*^9}, 
-   3.816865645842352*^9, 3.8168657340259733`*^9},
- CellLabel->"Out[34]=",ExpressionUUID->"c8368355-7858-4233-821f-2ec1ea125cea"]
+   3.816865645842352*^9, 3.8168657340259733`*^9, 3.816868822999785*^9},
+ CellLabel->"Out[35]=",ExpressionUUID->"dc53e142-dc2d-4eb0-bf44-4443e026ec73"]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -208,10 +243,10 @@ Cell[2494, 64, 796, 21, 30, "Input",ExpressionUUID->"2065719f-176a-4d0e-916a-14f
 Cell[3293, 87, 641, 17, 34, "Output",ExpressionUUID->"2cb50276-0f45-430f-96dd-41a3f253325b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3971, 109, 863, 19, 52, "Input",ExpressionUUID->"980dbdcb-4b50-4e7b-9349-a0781ad0817f"],
-Cell[4837, 130, 1290, 45, 77, "Output",ExpressionUUID->"c8368355-7858-4233-821f-2ec1ea125cea"]
+Cell[3971, 109, 908, 19, 52, "Input",ExpressionUUID->"980dbdcb-4b50-4e7b-9349-a0781ad0817f"],
+Cell[4882, 130, 3477, 80, 49, "Output",ExpressionUUID->"dc53e142-dc2d-4eb0-bf44-4443e026ec73"]
 }, Open  ]],
-Cell[6142, 178, 151, 3, 30, "Input",ExpressionUUID->"e409047c-0dc2-4b82-a6e6-ae9322308947"]
+Cell[8374, 213, 151, 3, 30, "Input",ExpressionUUID->"e409047c-0dc2-4b82-a6e6-ae9322308947"]
 }
 ]
 *)
